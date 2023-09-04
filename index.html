@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <!-- Goals
-Week 4 Project
-For this assignment, your task is to add advanced features to your “About Me” 
-page. You should notice that your code is looking increasingly professional, 
-and you are getting closer to having a potential employer looks at what you’ve 
-created to showcase your skills.
+Project 5
+In the previous modules and exercises we created file paths, file structures, linked HTML pages together, 
+filled them with SEO details and then we learnt how to use Git and GitHub with their different commands 
+while also learning how to create repositories. Now we will learn to upload our website from our local 
+machine to GitHub, add pages, CSS/SCSS and collaborate on projects.
 
-For this project, you will be adding advanced css features to your page. You 
-should make frequent use of pseudo-class and pseudo-element items, and include 
-at least two or three of the following in your design:
+Note: You can use the previous files you created for building your website.
 
-a sass .scss sheet to produce your css file
-media queries - DONE @css/styles.css at the very bottom
-css animations - DONE @transition effects for buttons and images
-advanced grid - DONE @Blog
-flexbox - DONE @header
-bootstrap - None included... everything is manually coded
+-Create your personal website with the correct file structure on your local machine - this file structure 
+should include: (DONE)
+
+a. One index.html page - this page should contain meta tags and all the HTML document linked appropriately (DONE)
+b. At least three other pages you can link to ( you can use the ones from the previous exercise: about us, contact us, and products page) (DONE)
+c. One CSS file and one optional Javascript file (DONE)
+d. At least two images on any page of your choice (DONE)
+
+-Upload and host your website to GitHub - name the repository after your website’s name (DONE)
+-Add one more additional page (DONE)
+-Change the color and bold a sentence on any page using pull and merge commands (DONE! Main page and under introduction.)
+-Invite collaborators through their GitHub username
 -->
 <html lang="en">
 <head>
@@ -38,6 +42,7 @@ bootstrap - None included... everything is manually coded
         <li class="listheader"><a href="blog.html" class="listlink">Blog</a>
         <li class="listheader"><a href="about_me.html" class="listlink">About Me</a></li>
         <li class="listheader"><a href="contact_me.html" class="listlink">Contact</a></li>
+        <li class="listheader"><a href="yesimcheating.html" class="listlink" target="_blank">"Another Page"</a></li>
       </ul>
     </nav>
     <form class="headerform">
@@ -47,11 +52,14 @@ bootstrap - None included... everything is manually coded
   </header>
 <!-- Start of main content -->
   <main>
-<!-- Image layers on top of page -->
+<!-- Picture of myself, including title and phone number -->
     <div class="parentimg">
-      <img class="graffiti" src="images/graffitibackground.jpg" alt="Wall painted with blue graffiti artstyle" width="100%">
-      <div class="joshuacontainer">
       <img class="joshuaimage1" src="images/me2021.jpg" alt="Joshua with Skullcandy Crushers posing at camera">
+      <div>
+        <h1 class="name">Joshua Gonzalez</h1>
+        <p class="name"><b>Software Developer</b></p>
+        <p class="name">(713) 701-7841</p>
+        <p class="name">Fresno, TX</p>
       </div>
     </div>
 <!-- Music player -->
@@ -69,130 +77,24 @@ bootstrap - None included... everything is manually coded
       <div class="bodycontent">
         <h3>Introduction</h3>
         <p>
-          Hello, my name is Joshua! I am currently working as a Transportation Associate for TOM Team (Transportation Operations Management) at Amazon. I worked for Amazon for about 2 years and 5 months. Before working at Amazon, I worked at Harris Ranch Beef Company for about 10 years, learning managerial skills and abilities as a trainer. Before actually working thou, I served in the military as a Mechanical Aircraft Engineer, in the Navy branch. <br><br> To learn more about myself, click on <a href="about_me.html">About Me</a>!
+          Hello, my name is Joshua! I am currently working as a Transportation Associate for TOM Team (Transportation Operations Management) at Amazon. 
+          I worked for Amazon for about 2 years and 6 months. Before working at Amazon, I worked at Harris Ranch Beef Company for about 10 years, learning 
+          managerial skills and abilities as a trainer. Before actually working thou, I served in the military as a Mechanical Aircraft Engineer, in the Navy 
+          branch. <br></p>
+          <p>In regards to coding, I am in a course through Correlation One for Software Development, learning skills such as HTML5, CSS3, Bootstrap v5.2, GitHub, 
+          Wordpress, and now working towards Javascript. I also have experience in Back-End development, which involve SQL, MySQL, Java, Python, to a more specific 
+          language, such as C# and Lua.<br></p> 
+          <p class="colorbold">To learn more about myself, click on <a href="about_me.html">About Me</a>!
         </p>
       </div>
-      <br><br>
-<!-- Blog of doom and despair -->
-      <div class="bodycontent">
-        <h3>Blog</h3>
-        <p><b>
-          Saturday - August 19th, 2023
-        </b></p>
-        <p>Github.... Oh boy, was the lesson all over the place... LOL
-          <br><br>It is rather simple to sign up for Github, connect accounts, and "push and commit". It's just 
-          the actual steps given were rather... unique to say. <p style="font-size:6px;">Please don't kill me</p>
-          This was a short week for me due to the amount of work I've been doing, covering for my manager, and 
-          ongoing list of random "unfortunate" times. But, I shall not give up! Thank you for reading this short 
-          day, but I shall continue my streak of actually doing these blogs.
-          <br><br>-Joshua
-        </p>
-        <p><b>
-          Saturday - August 12th, 2023
-        </b></p>
-        <p>Welcome again to my blog! Recent updates: been working a whole lot... Amazon sent lots of Mandatory 
-          Extra Time my way (getting close to my 60hrs a week... *wipes sweat*), so it reduced my time to actually work on my site...  <em>HOWEVER~</em> I was 
-          actually able to add an animation on what I always wanted... a running Chocobo gif on top of the screen. 
-          Isn't that amazing? Anyways, I'm continuing building my website. I love the ease of access Bootstrap 
-          has given to me... but I wanted to use actual code instead of "short-cutting", you know what I mean? <br><br>
-          Anyways, my work in progress is as follows:
-          <br><br> - Add a hamburger icon to the top right of the screen when in mobile mode
-          <br> - Implement Javascript features
-          <br> - Laugh a little once in a while
-          <br> - Separate "Blog", "About Me", and "Contact Me" into separate websites for a cleaner look
-          <br>
-          Anyways! Thank you for reading, and hope you enjoy your day/afternoon/night!!! <br><br>
-          -Joshua
-        </p>
-        <p><b>
-          Saturday - August 5th, 2023
-        </b></p>
-        <p>Hello, welcome again to my blog! I'm still not used to typing blogs, but well, 
-          there's always a start for everything, am I right? So far in my development journey, 
-          we have learned how to use grids, implement links to images, and use CSS stylesheets! 
-          Pretty impressive if I do say so myself. I do have a general idea due to my background 
-          learning back-end development on my free time earlier this year, but my brain is loving 
-          the new content. Thanks to all the TA's out there that helps out when things get rough, thou 
-          I definitely want to give the biggest shout out to David Marshall. The way he delivers 
-          his teaching method is amazing, but the biggest part of his deliverance is his gifs. Cannot 
-          live without the gifs, which adds extra flair to the teaching method. Kudos to you! <br><br>
-          Besides that, I also want to give the extra shout out to all the instructors we had so far! 
-          I had the opportunity to grow as a software developer thanks to you all. So, thank you, 
-          Correlation One! <br><br>
-          Until next time~ Peace! <br><br>
-          -Joshua <br><br> PS. Just to add a little more about myself, here are some cosplays I have cosplayed in the past. Enjoy!
-        </p>
-        <p style="font-size:6px;">
-          This may or may not be an excuse to do a quick requirement using grid... I don't know what you are talking about... *nervous in tiny letters*</p><br><br>
-        <div class="grid">
-          <img class="gridimage" src="images/joshuasmashball.jpg" alt="a">
-          <img class="gridimage" src="images/joshuamarth.jpg" alt="b">
-          <img class="gridimage" src="images/joshuanoctis.jpg" alt="c">
-          <img class="gridimage" src="images/joshualink.jpg" alt="d">
-        </div><br><br>
-        <p><b>
-          Saturday - July 29th, 2023
-        </b></p>
-        <p>
-          This will be my first ever blog post I've created. I don't really know how to write down a 
-          blog, but considering that I'm already typing down what's in my thoughts already, I believe 
-          it is already turning into one...
-        <p style="font-size:6px;">
-          Hoping so anyways... *laughs in tiny letters*</p>
-        <p>
-          Either way, this is the beginning of my developing journey. Although I did had some development 
-          background in regards to back-end server side, I was learning by myself. Joining Correlation One 
-          so far, has actually given me the knowledge I need to further develop my skills as a developer. 
-          I cannot wait to learn more, and hope to add more to my skillsets!
-        </p>
-        <p>
-          -Joshua
-        </p>
-      </div><br><br>
-<!-- Random video to add to my site -->
-      <div class="bodycontent">
-        <h3>Random Video~</h3>
-      <div class="videobox">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/6aR5HGTr0fY" allowfullscreen></iframe>
-      </div>
-      </div><br><br>
-<!-- About me! -->
-      <div class="bodycontent">
-        <h3>About Me</h3>
-        <p>
-          I am a big video game video game enthusiast, 
-          I play music (can even read sheet music!), I draw pixel art, cook food, do math, and- oh, 
-          too specific? Anyways, I have created this website to show my current interest.
-          Normally, I would either be playing video games or I will do lots and lots of pixel art. 
-          I grew up with sidescrolling games like Mega Man X and Metroid, so majority of the music 
-          I enjoy is based them. Oh and RPG's, how can I forget about them? Games like Final Fantasy, 
-          then those SRPGs like Fire Emblem is what got me into the game's storyline. Since then, I've 
-          been enjoying storylines that involves tragic change of events and... well... feels like watching 
-          a soap opera, if I were to be honest. &#129315;<br><br>
-          For more about me, you can find/follow me by clicking on the 
-          logos corresponding to each social media platform!
-        </p>
-        <a target="_blank" href="https://www.facebook.com/profile.php?id=100095687736677"><img src="images/facebookicon.png" alt="Joshua's Facebook" height="42px" width="42px" style="margin-right: 10px;"></a>
-        <a target="_black" href="https://www.youtube.com/@redguitari"><img src="images/youtubeicon.png" alt="Joshua's Youtube" height="42px" width="42px"></a>
-      </div><br><br><br><br>
-      <div class="bodycontent">
-        <h3>Contact Me</h3>
-        <form action="./example.html" style="display: flex; flex-direction: column;">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email">
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" rows="5"></textarea><br>
-          <button type="submit" style="border: none; padding: 10px;">Send me a message!</button>
-        </form>
-      </div>
-      <br><br><br><br>
+      <br><br><br><br><br><br><br>
   </main>
 <!-- Footer of doom and despair -->
   <footer>
       <p>Website created by 
       <b><a href="mailto:joshua.gwem@outlook.com" style="color: #FFFFFF; text-decoration: none;">Joshua Gonzalez</a></b></p>
   </footer>
+
+  <script src="javascript/javascript.js"></script>
 </body>
 </html>
