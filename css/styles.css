@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Roboto&display=swap');
 
+/* Merge a color and bold a sentence... bet! Here's the code */
+.colorbold {
+  color: purple;
+  font-weight: bold;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   color: #FFFFFF;
   padding: 10px;
   display: flex;
@@ -26,7 +32,7 @@
 
 header:hover {
   background-color: rgb(0, 0, 0);
-  transition: all 0.5s ease-out;
+  transition: all 0.7s ease-out;
 }
 
 .headerlist {
@@ -107,8 +113,18 @@ body {
 }
 
 .parentimg {
-  position: relative;
   width: 100%;
+  height: 150px;
+  margin: auto;
+  padding: 10px;
+  border-color: #000000;
+  word-wrap: normal;
+  display: flex;
+}
+
+.name {
+  display: flex;
+  margin: 5px;
 }
 
 .graffiti {
@@ -129,12 +145,14 @@ body {
 }
 
 .joshuaimage1 {
-  width: 100%;
+  width: 150px;
   height: 100%;
   object-fit: cover;
   border-radius: 500px;
   filter: grayscale(0.6);
   transition: all 0.5s ease-out;
+  top: 0px;
+  left: 0px;
 }
 
 .joshuaimage1:hover {
@@ -142,11 +160,22 @@ body {
 }
 
 body {
-  background-color: rgb(194, 194, 189);
+  background-color: rgb(224, 224, 224);
 }
 
 h3 {
   background-color: rgba(11, 60, 151, 0.2);
+}
+
+.title {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  border-style: none;
+  border-color: #000000;
+  word-wrap: normal;
+  font-size: 2.5rem;
 }
 
 .bodycontent {
@@ -231,11 +260,11 @@ footer:hover {
 }
 
 @media (max-width: 1100px) {
-  .listheader {
+  .inputbox {
     display: none;
   }
 
-  .inputbox {
+  .chocobo {
     display: none;
   }
 
