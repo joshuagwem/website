@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua's Website of Doom and Despair</title>
+  <link rel="icon" href="images/ffxviifriticon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Main header -->
+  <header class="header">
+    <img src="images/chocobo.gif" alt="Running Chocobo" class="chocobo">
+    <nav>
+      <ul class="headerlist">
+        <li class="listheader"><a href="index.html" class="listlink">Home</a></li>
+        <li class="listheader"><a href="blog.html" class="listlink">Blog</a>
+        <li class="listheader"><a href="about_me.html" class="listlink">About Me</a></li>
+        <li class="listheader"><a href="contact_me.html" class="listlink">Contact</a></li>
+        <li class="listheader"><a href="projects.html" class="listlink">Projects</a></li>
+      </ul>
+    </nav>
+    <form class="headerform">
+      <input type="text" placeholder="Enter text if you dare..." class="inputbox">
+      <button type="submit" class="inputbutton">Search</button>
+    </form>
+  </header>
+<!-- Start of main content -->
+  <main>
+<!-- Image layers on top of page -->
+    <div class="parentimg">
+      <img class="joshuaimage1" src="images/me2021.jpg" alt="Joshua with Skullcandy Crushers posing at camera">
+      <div>
+        <h1 class="name">Joshua Gonzalez</h1>
+        <p class="name"><b>Software Developer</b></p>
+        <p class="name">(713) 701-7841</p>
+        <p class="name">Fresno, TX</p>
+      </div>
+    </div>
+<!-- Music player -->
+    <div class="musicplayer">
+      <audio controls>
+        <source src="music/ultimalius.mp3" alt="Final Fantasy XVI Fight against Ultimalius" title="Ultimalius" type="audio/mp3">
+         <p>
+          "Your browser doesn't support HTML audio. Here is a "
+           <a href="https://youtu.be/YaX1YqgekTg">link to the audio</a>" instead."
+         </p>
+      </audio>
+      </div>
+      <br><br>
+      <h3 class="title" id="toggle-red">Projects</h3><br>
+<!-- First project -->
+        <div class="bodycontent">
+            <p><b>
+            Project 1 - Gacha Generator<br>
+            <a href="#">View on Github</a>
+            </b></p>
+            <img src="images/projectgacha.png" alt="Webpage design for a dice rolling project.">
+            <p>This is a current work-in-progress gacha generator that gives items to player. Every item will be stored in their inventory (perhaps even obtain rare items, hehe).<br><br>
+                Probably can even add daily funding after building the project. More ideas will populate as the days go by~. All pixel art will be created by me.
+            <br><br>-Joshua
+            </p>
+        </div><br>
+        <!-- Second project -->
+        <div class="bodycontent">
+            <p><b>
+            Project 2 - Random Dice Generator<br>
+            <a href="#">View on Github</a>
+            </b></p>
+            <img src="images/projectdice.png" alt="Webpage design for a dice rolling project.">
+            <p>This is a current work-in-progress dice generator that add points to either player. It'll take turns per dice roll, and the highest rolls wins!<br><br>
+                Perhaps I can have it saved up to a certain number of rolls for each player.
+            <br><br>-Joshua
+            </p>
+        </div><br>
+                <!-- Darkmode test -->
+                <div class="bodycontent">
+                    <p><b>
+                    Darkmode Switch:
+                    </b><br><br>
+                      Time to show something new I learned in my class, a dark/light mode switch below!<br></p>
+                    <p class="mode-status">But beware...</p>
+                    <label class="toggle">
+                      <input type="checkbox" id="mode-toggle">
+                      <span class="sliderDarkMode"></span>
+                    </label>
+                    <p>-Joshua</p>
+                </div><br>
+      <br><br><br><br>
+  </main>
+<!-- Footer of doom and despair -->
+  <footer>
+      <p>Website created by 
+      <b><a href="mailto:joshua.gwem@outlook.com" style="color: #FFFFFF; text-decoration: none;">Joshua Gonzalez</a></b></p>
+  </footer>
+
+  <script src="javascript/javascript.js"></script>
+</body>
+</html>
