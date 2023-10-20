@@ -25,7 +25,7 @@
     </nav>
     <form class="headerform">
       <input type="text" placeholder="Enter text if you dare..." class="inputbox">
-      <button type="submit" class="inputbutton">Search</button>
+      <button class="inputbutton">Search</button>
     </form>
   </header>
 <!-- Start of main content -->
@@ -53,43 +53,60 @@
       <br><br>
       <h3 class="title" id="toggle-red">Projects</h3><br>
 <!-- First project -->
-        <div class="bodycontent">
-            <p><b>
-            Project 1 - Gacha Generator<br>
-            <a href="#">View on Github</a>
-            </b></p>
-            <img src="images/projectgacha.png" alt="Webpage design for a dice rolling project.">
-            <p>This is a current work-in-progress gacha generator that gives items to player. Every item will be stored in their inventory (perhaps even obtain rare items, hehe).<br><br>
-                Probably can even add daily funding after building the project. More ideas will populate as the days go by~. All pixel art will be created by me.
-            <br><br>-Joshua
-            </p>
-        </div><br>
-        <!-- Second project -->
-        <div class="bodycontent">
-            <p><b>
-            Project 2 - Random Dice Generator<br>
-            <a href="#">View on Github</a>
-            </b></p>
-            <img src="images/projectdice.png" alt="Webpage design for a dice rolling project.">
-            <p>This is a current work-in-progress dice generator that add points to either player. It'll take turns per dice roll, and the highest rolls wins!<br><br>
-                Perhaps I can have it saved up to a certain number of rolls for each player.
-            <br><br>-Joshua
-            </p>
-        </div><br>
-                <!-- Darkmode test -->
-                <div class="bodycontent">
-                    <p><b>
-                    Darkmode Switch:
-                    </b><br><br>
-                      Time to show something new I learned in my class, a dark/light mode switch below!<br></p>
-                    <p class="mode-status">But beware...</p>
-                    <label class="toggle">
-                      <input type="checkbox" id="mode-toggle">
-                      <span class="sliderDarkMode"></span>
-                    </label>
-                    <p>-Joshua</p>
-                </div><br>
-      <br><br><br><br>
+      <div class="bodycontent">
+        <p><b>
+          Project 1 - Gacha Generator<br>
+        <a href="#">View on Github</a>
+        </b></p>
+        <img src="images/projectgacha.png" alt="Webpage design for a dice rolling project.">
+        <p>This is a current work-in-progress gacha generator that gives items to player. Every item will be stored in their inventory (perhaps even obtain rare items, hehe).<br><br>
+            Probably can even add daily funding after building the project. More ideas will populate as the days go by~. All pixel art will be created by me.
+        <br><br>-Joshua
+        </p>
+      </div><br>
+<!-- Second project -->
+      <div class="bodycontent">
+        <p><b>
+          Project 2 - Random Dice Generator<br>
+        <a href="https://github.com/joshuagwem/dice-rolling-project">View on Github</a>
+        </b></p>
+        <img src="images/projectdice.png" alt="Webpage design for a dice rolling project.">
+        <p>This is a current work-in-progress dice generator that add points to either player. It'll take turns per dice roll, and the highest rolls wins!<br><br>
+          Perhaps I can have it saved up to a certain number of rolls for each player.
+        <br><br>-Joshua
+        </p>
+      </div><br>
+<!-- Darkmode test -->
+      <div class="bodycontent">
+        <p><b>
+          Darkmode Switch:
+        </b><br><br>
+          Time to show something new I learned in my class, a dark/light mode switch below!<br></p>
+        <p class="mode-status">But beware...</p>
+        <label class="toggle">
+          <input type="checkbox" id="mode-toggle">
+          <span class="sliderDarkMode"></span>
+        </label>
+        <p>-Joshua</p>
+      </div><br>
+<!-- Age calculator test -->
+      <div class="bodycontent">
+        <p><b>
+          Age calculator:
+        </b></p>
+        <form id="formBD">
+          <label for="namebirth">Enter your first name:</label><br>
+          <input type="text" id="namebirth" name="namebirth" placeholder="First name" required><br><br>
+          <label for="birthdate">Enter your birthdate:</label><br>
+          <input type="text" id="birthdate" name="birthdate" placeholder="MM/DD/YYYY" required><br><br>
+          <div>
+            <button type="submit" class="submit">SUBMIT</button>
+            <button type="reset" class="reset">RESET</button>
+          </div>
+        </form>
+        <p id="age"></p>
+      </div><br>
+    <br><br><br><br>
   </main>
 <!-- Footer of doom and despair -->
   <footer>
@@ -97,6 +114,7 @@
       <b><a href="mailto:joshua.gwem@outlook.com" style="color: #FFFFFF; text-decoration: none;">Joshua Gonzalez</a></b></p>
   </footer>
 
-  <script src="javascript/javascript.js"></script>
+  <script src="javascript/darkmode.js"></script>
+  <script src="javascript/agecalculator.js"></script>
 </body>
 </html>

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Roboto&display=swap');
 
-/* Merge a color and bold a sentence... bet! Here's the code */
 .colorbold {
   color: purple;
   font-weight: bold;
@@ -272,6 +271,10 @@ h3 {
   border-radius: 2.13rem;
 }
 
+.sliderDarkMode:hover {
+  background-color: #AE0000;
+}
+
 .sliderDarkMode:before {
   position: absolute;
   content: "";
@@ -302,6 +305,36 @@ input:checked + .sliderDarkMode:before {
 }
 
 /* End of darkmode styling */
+
+/* Age calculator styling */
+
+.submit {
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.submit:hover {
+  border: 2px solid #720000;
+  background-color: #AE0000;
+  color: #FFFFFF;
+}
+
+.reset {
+  border: 2px solid #000000;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.reset:hover {
+  color: #FFFFFF;
+}
+
+#age {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+}
 
 footer {
   margin-top: 200px;
