@@ -10,7 +10,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(0, 0, 0);
   color: #FFFFFF;
   padding: 10px;
   display: flex;
@@ -22,6 +22,23 @@
   transition: all 1s ease-out;
 }
 
+.secondheader {
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
+  z-index: 1000;
+  transition: all 1s ease-in-out;
+  display: none;
+}
+
+.secondheader:hover {
+  background-color: rgb(0, 0, 0);
+  transition: all 0.7s ease-out;
+}
+
 .chocobo {
   height: 100%;
   transform: scalex(-1);
@@ -29,28 +46,116 @@
   animation: runningchocobo 6s infinite;
 }
 
-header:hover {
-  background-color: rgb(0, 0, 0);
-  transition: all 0.7s ease-out;
-}
-
 .headerlist {
   list-style: none;
   display: flex;
 }
 
-.headerform {
-  display: flex;
-  align-items: center;
-}
-
 .listheader {
- margin-right: 20px;
-}
+  margin-right: 20px;
+ }
 
-.listlink {
+ .listlink {
   color: #FFFFFF;
   text-decoration: none;
+ }
+
+.headercontainer {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.headerbutton {
+  background-color: #808080;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 9px;
+  transition: all 0.5s ease-out;
+  padding: 10px;
+  margin-right: 1rem;
+}
+
+.headerbutton:hover {
+  background-color: #606060;
+  transition: all 0.5s ease-out;
+}
+
+.centerlog {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.8);
+  padding-top: 4rem;
+}
+
+.register {
+  background-color: #CCCCCC;
+  margin: 5% auto 15% auto;
+  border: double #000000;
+  width: 50%;
+  font-weight: bold;
+}
+
+#formConfirmMessage {
+  margin: 8px 0 8px 0;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: rgb(67, 161, 67);
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  display: none;
+}
+
+.registerError {
+  display: none;
+  color: #DC3545;
+  margin: 8px;
+}
+
+#tos {
+  align-content: center;
+}
+
+#fname, #lname, #email, #password {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+#formbutton {
+  background-color: #3230C7;
+  color: #FFFFFF;
+  padding: 14px 20px;
+  margin: 0 auto;
+  cursor: pointer;
+  width: 75%;
+  transition: all 0.5s ease-out;
+  display: block;
+}
+
+#formbutton:hover {
+  background-color: #1613cc;
+  transition: all 0.5s ease-in;
+}
+
+#formbutton:disabled, #formbutton[disabled] {
+  background-color: #a1a0bd;
+  border: none;
+  cursor: default;
 }
 
 .inputbox {
@@ -61,37 +166,8 @@ header:hover {
 
 }
 
-.inputbutton {
-  background-color: #808080;
-  color: #FFFFFF;
-  cursor: pointer;
-  border-radius: 9px;
-  transition: all 0.5s ease-out;
-  margin-right: 10px;
-  height: 40px;
-}
-
-.inputbutton:hover {
-  background-color: #000000;
-  transition: all 0.5s ease-out;
-}
-
-button {
-  background-color: #808080;
-  color: #FFFFFF;
-  cursor: pointer;
-  border-radius: 9px;
-  transition: all 0.5s ease-out;
-  margin-right: 10px;
-}
-
-button:hover {
-  background-color: #000000;
-  transition: all 0.5s ease-out;
-}
-
 body {
-  background-color: #FFFFFF;
+  background-color: #CCCCCC;
   font-family: 'Roboto', sans-serif;
   font-family: 'Jost', sans-serif;
   font-size: 15px;
@@ -115,7 +191,6 @@ body {
 .parentimg {
   width: 100%;
   height: 150px;
-  margin: auto;
   padding: 10px;
   border-color: #000000;
   word-wrap: normal;
@@ -123,25 +198,8 @@ body {
 }
 
 .name {
-  display: flex;
+  display: column;
   margin: 5px;
-}
-
-.graffiti {
-  width: 100%;
-  top: 0;
-  left: 0;
-  border: 1px solid
-}
-
-.joshuacontainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 40%;
-  width: 30%;
-  border: none;
 }
 
 .joshuaimage1 {
@@ -159,10 +217,6 @@ body {
   filter: grayscale(0);
 }
 
-body {
-  background-color: rgb(224, 224, 224);
-}
-
 h3 {
   background-color: rgba(11, 60, 151, 0.2);
 }
@@ -178,10 +232,17 @@ h3 {
   font-size: 2.5rem;
 }
 
+.imgbodycontent {
+  width: 75%;
+  margin: auto;
+  padding: 10px;
+}
+
 .bodycontent {
   width: 75%;
   text-align: center;
   margin: auto;
+  margin-bottom: 1rem;
   padding: 10px;
   border-style: double;
   border-color: #000000;
@@ -235,6 +296,16 @@ h3 {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.contactme {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactmeBtn {
+  border: none;
+  padding: 10px;
 }
 
 /* Dark mode CSS styling */
@@ -304,14 +375,15 @@ input:checked + .sliderDarkMode:before {
   transition: all 0.4s ease-in;
 }
 
-/* End of darkmode styling */
-
 /* Age calculator styling */
 
 .submit {
   border: 2px solid #000000;
   background-color: #ffffff;
+  border-radius: 9px;
   color: #000000;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
 .submit:hover {
@@ -323,10 +395,15 @@ input:checked + .sliderDarkMode:before {
 .reset {
   border: 2px solid #000000;
   background-color: #FFFFFF;
+  border-radius: 9px;
   color: #000000;
+  transition: all 0.5s ease-out;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>❗</text></svg>") 16 0,auto; 
 }
 
 .reset:hover {
+  background-color: #000000;
+  transition: all 0.5s ease-out;
   color: #FFFFFF;
 }
 
@@ -337,7 +414,7 @@ input:checked + .sliderDarkMode:before {
 }
 
 footer {
-  margin-top: 200px;
+  margin-top: 30rem;
   text-align: center;
   padding: 3px;
   background-color: #3B3B3B;
@@ -351,6 +428,8 @@ footer {
 footer:hover {
   opacity: 1.0;
 }
+
+/* Media queries */
 
 @media (min-width: 280px) {
   .grid {
@@ -370,6 +449,11 @@ footer:hover {
   .inputbutton {
     display: none;
   }
+
+  .register {
+  width: 80%
+  }
+
 }
 
 @media (min-width: 650px) {
@@ -383,8 +467,9 @@ footer:hover {
 }
 
 @keyframes runningchocobo {
-  0% {left: 0px;}
-  49% {left: 200px; transform: scalex(-1)}
+  0% {left: -300px;}
+  49% {left: 300px; transform: scalex(-1)}
   51% {transform:scalex(1)}
-  98% {left: 0px; transform:scalex(1)}
+  98% {left: -300px; transform:scalex(1)}
+  100% {left: -300px; transform: scalex(-1)}
 }
