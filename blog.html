@@ -12,32 +12,70 @@
 </head>
 <body>
 <!-- Main header -->
-  <header class="header">
-    <img src="images/chocobo.gif" alt="Running Chocobo" class="chocobo">
-    <nav>
-      <ul class="headerlist">
-        <li class="listheader"><a href="index.html" class="listlink">Home</a></li>
-        <li class="listheader"><a href="blog.html" class="listlink">Blog</a>
-        <li class="listheader"><a href="about_me.html" class="listlink">About Me</a></li>
-        <li class="listheader"><a href="contact_me.html" class="listlink">Contact</a></li>
-        <li class="listheader"><a href="projects.html" class="listlink" target="_blank">Projects</a></li>
-      </ul>
-    </nav>
-    <form class="headerform">
-      <input type="text" placeholder="Enter text if you dare..." class="inputbox">
-      <button type="submit" class="inputbutton">Search</button>
+<header>
+  <div class="header">
+    <div class="headercontainer">
+      <button class="headerbutton" id="menu">Menu</button>
+    </div>
+    <div class="headercontainer">
+      <img src="images/chocobo.gif" alt="Running Chocobo" class="chocobo">
+    </div>
+    <div class="headercontainer">
+      <button class="headerbutton" id="registerBtn">Register</button>
+    </div>
+  </div>
+  <div class="secondheader" id="headerMenuList">
+    <ul class="headerlist">
+      <li class="listheader"><a href="index.html" class="listlink">Home</a></li>
+      <li class="listheader"><a href="blog.html" class="listlink">Blog</a>
+      <li class="listheader"><a href="about_me.html" class="listlink">About Me</a></li>
+      <li class="listheader"><a href="contact_me.html" class="listlink">Contact</a></li>
+      <li class="listheader"><a href="projects.html" class="listlink">Projects</a></li>
+    </ul>
+  </div>
+  <div class="centerlog" id="registerScreen">
+    <form method="post" action="javascript:void(0);" class="register" id="register" autocomplete="on" novalidate>
+      <!-- Title form -->
+      <h3 class="title">Please register to continue</h3>
+      <div id="formConfirmMessage">Successfully registered!</div>
+      <!-- First name input -->
+      <label for="fname">First Name:</label>
+      <small class="registerError">Required</small><br>
+      <input type="text" id="fname" name="fname" placeholder="First Name" required><br><br>
+      <!-- Last name input -->
+      <label for="lname">Last Name:</label>
+      <small class="registerError">Required</small><br>
+      <input type="text" id="lname" name="lname" placeholder="Last Name" required><br><br>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <small class="registerError">Required</small><br>
+      <input type="text" id="email" name="email" placeholder="Enter your Email" required><br><br>
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <small class="registerError">Required</small><br>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+      <!-- Terms of Service Checkbox -->
+      <input type="checkbox" id="tos" name="tos" value="Terms of Service" required>
+      <label for="tos">Check here to accept the <a href="#">Terms of Service.</a></label>
+      <small class="registerError">Required</small><br><br>
+      <!-- Submit button -->
+      <input type="submit" value="Register Now!" id="formbutton" disabled>
     </form>
-  </header>
+  </div>
+</header>
 <!-- Start of main content -->
   <main>
-<!-- Image layers on top of page -->
-    <div class="parentimg">
-      <img class="joshuaimage1" src="images/me2021.jpg" alt="Joshua with Skullcandy Crushers posing at camera">
-      <div>
-        <h1 class="name">Joshua Gonzalez</h1>
-        <p class="name"><b>Software Developer</b></p>
-        <p class="name">(713) 701-7841</p>
-        <p class="name">Fresno, TX</p>
+<!-- Picture of myself, including title and phone number -->
+    <div class="imgbodycontent">
+      <div class="parentimg">
+        <img class="joshuaimage1" src="images/me2021.jpg" alt="Joshua with Skullcandy Crushers posing at camera">
+        <div>
+          <h1 class="name">Joshua Gonzalez</h1>
+          <p class="name"><b>Software Developer</b></p>
+          <p class="name">(713) 701-7841</p>
+          <p class="name">Fresno, TX</p>
+        </div>
       </div>
     </div>
 <!-- Music player -->
@@ -69,7 +107,7 @@
             Anyways, I will continue to build my skills so that one day, I can design the best website in the world!
             <br><br>-Joshua
             </p>
-        </div><br>
+        </div>
         <div class="bodycontent">
         <p><b>
           Saturday - August 19th, 2023
@@ -82,7 +120,7 @@
           day, but I shall continue my streak of actually doing these blogs.
           <br><br>-Joshua
         </p>
-        </div><br>
+        </div>
         <div class="bodycontent">
         <p><b>
           Saturday - August 19th, 2023
@@ -95,7 +133,7 @@
           day, but I shall continue my streak of actually doing these blogs.
           <br><br>-Joshua
         </p>
-        </div><br>
+        </div>
         <div class="bodycontent">
         <p><b>
           Saturday - August 12th, 2023
@@ -114,7 +152,7 @@
           Anyways! Thank you for reading, and hope you enjoy your day/afternoon/night!!! <br><br>
           -Joshua
         </p>
-        </div><br>
+        </div>
         <div class="bodycontent">
         <p><b>
           Saturday - August 5th, 2023
@@ -141,8 +179,8 @@
           <img class="gridimage" src="images/joshuamarth.jpg" alt="b">
           <img class="gridimage" src="images/joshuanoctis.jpg" alt="c">
           <img class="gridimage" src="images/joshualink.jpg" alt="d">
-        </div><br><br>
-        </div><br>
+        </div>
+        </div>
         <div class="bodycontent">
         <p><b>
           Saturday - July 29th, 2023
@@ -163,8 +201,7 @@
           -Joshua
         </p>
         </div>
-      </div><br><br>
-      <br><br><br><br>
+      </div>
   </main>
 <!-- Footer of doom and despair -->
   <footer>
