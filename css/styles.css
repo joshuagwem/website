@@ -308,6 +308,14 @@ h3 {
   padding: 10px;
 }
 
+.nasamap {
+  width: 75%;
+  height: 40rem;
+  min-height: 10rem;
+  margin: auto;
+  padding: 10px;
+}
+
 /* Dark mode CSS styling */
 .dark-mode {
   background-color: #333333;
@@ -454,6 +462,10 @@ footer:hover {
   width: 80%
   }
 
+  .nasamap {
+    width: 95%;
+    height: 20rem;
+  }
 }
 
 @media (min-width: 650px) {
